@@ -12,7 +12,7 @@ body {
 }
 
 nav {
-    background-color: #861657;
+    background-color: #BABD42;
     color: #fff;
     display: flex;
     justify-content: flex-end;
@@ -67,7 +67,9 @@ header p {
     margin: 0;
 
 }
-
+span{
+    color: #EFD345;
+}
 section {
     padding: 40px;
     text-align: center;
@@ -82,8 +84,8 @@ section p {
     margin-top: 0;
 }
 
-.bg-pinkish {
-    background-color: #A64253;
+.bg-connect {
+    background-color: #EFD345;
     color: #fff;
 }
 
@@ -116,7 +118,9 @@ section p {
     font-size: 20px;
     margin-top: 10px;
 }
-
+#myprojects{
+    background-color: #FFEF82;
+}
 .social-ul {
     display: flex;
     flex-wrap: wrap;
@@ -142,7 +146,7 @@ section p {
 
 
 footer {
-    background-color: #861657;
+    background-color: #82954B;
     color: #fff;
     padding: 10px;
     text-align: center;
