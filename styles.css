@@ -38,6 +38,12 @@ header {
     position: relative;
 }
 
+header a{
+    text-decoration: none;
+    color:white;
+    font-size: 25px;
+}
+
 header::after {
     content: '';
     background-color: #000;
@@ -60,15 +66,17 @@ header h1 {
     margin-bottom: 5px;
     margin-top: 0;
 }
-
+header .fa-file-arrow-down{
+    color:#AA8B56;;
+}
 header p {
+    text-align:justify;
     font-size: 30px;
     font-weight: bolder;
     margin: 0;
-
 }
 span{
-    color: #EFD345;
+    color: #AA8B56;
 }
 section {
     padding: 40px;
@@ -160,4 +168,5 @@ footer .fa-heart {
     section {
         padding: 20px;
     }
+   
 }
