@@ -19,49 +19,54 @@ h1 {
     margin-bottom: 5px;
 }
 
-h2 {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
 /* Timeline Container */
-#timeline {
+.container {
     position: relative;
     max-width: 800px;
     margin: 20px auto;
 }
 
-.timeline-item {
+/* Timeline Entry */
+.entry {
     display: flex;
     align-items: center;
     margin-bottom: 30px;
     position: relative;
 }
 
-.year {
-    width: 80px;
+.timespan {
+    width: 100px;
     font-size: 16px;
     font-weight: bold;
     color: #0077cc;
+    text-align: right;
+    padding-right: 20px;
 }
 
-.icon {
+.ico {
+    position: relative;
     width: 50px;
     height: 50px;
-    background: #f4f4f4;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 15px;
 }
 
-.icon img {
+.ico img {
     width: 40px;
     height: 40px;
+    border-radius: 50%;
 }
 
-.content {
+.entry-dot {
+    width: 12px;
+    height: 12px;
+    background: #0077cc;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: -6px;
+    transform: translateY(-50%);
+}
+
+.desc {
     background: #f9f9f9;
     padding: 15px;
     border-radius: 5px;
@@ -89,17 +94,19 @@ footer {
         padding: 15px;
     }
 
-    .timeline-item {
+    .entry {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .icon {
+    .ico {
         margin-bottom: 10px;
     }
 
-    .year {
+    .timespan {
         font-size: 14px;
+        text-align: left;
+        padding-left: 20px;
     }
 }
 
@@ -109,7 +116,7 @@ footer {
         padding: 10px;
     }
 
-    .year {
+    .timespan {
         font-size: 12px;
     }
 
