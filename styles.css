@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    max-width: 700px;
+    max-width: 800px;
     margin: 40px auto;
     padding: 20px;
     line-height: 1.6;
@@ -20,33 +20,58 @@ h1 {
 }
 
 h2 {
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 5px;
-    margin-top: 40px;
-}
-
-h3 {
-    margin-bottom: 5px;
-}
-
-p {
-    margin: 5px 0;
-}
-
-/* Navigation */
-nav {
     text-align: center;
     margin-bottom: 30px;
 }
 
-nav a {
-    color: #0077cc;
-    text-decoration: none;
-    margin: 0 15px;
+/* Timeline Container */
+#timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 20px auto;
 }
 
-nav a:hover {
-    text-decoration: underline;
+.timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.year {
+    width: 80px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #0077cc;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    background: #f4f4f4;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.icon img {
+    width: 40px;
+    height: 40px;
+}
+
+.content {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    flex: 1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    margin-top: 0;
+    font-size: 18px;
 }
 
 /* Footer */
@@ -64,16 +89,17 @@ footer {
         padding: 15px;
     }
 
-    nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+    .timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    nav a {
-        display: block;
-        padding: 5px;
-        margin: 5px;
+    .icon {
+        margin-bottom: 10px;
+    }
+
+    .year {
+        font-size: 14px;
     }
 }
 
@@ -83,7 +109,19 @@ footer {
         padding: 10px;
     }
 
-    nav {
-        flex-direction: column;
+    .year {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 14px;
     }
 }
