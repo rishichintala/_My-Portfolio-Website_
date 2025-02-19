@@ -17,6 +17,7 @@ body {
     margin: 0 auto;
 }
 
+/* Header Section */
 .header {
     text-align: center;
     margin-bottom: 2rem;
@@ -29,19 +30,26 @@ body {
 }
 
 .contact-info {
-    margin-bottom: 1rem;
-    color: #555;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
+    margin-bottom: 1rem;
 }
 
-.contact-info a {
-    color: #007bff;
+.contact-info a, .contact-info span {
+    color: #555;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
+.contact-info a:hover {
+    color: #007bff;
+}
+
+/* Section Styling */
 .section {
     background-color: white;
     padding: 2rem;
@@ -56,8 +64,12 @@ h2 {
     padding-bottom: 0.5rem;
     margin-bottom: 1.5rem;
     font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
+/* Experience & Project Items */
 .experience-item, .project-item {
     margin-bottom: 1.5rem;
 }
@@ -84,6 +96,7 @@ strong {
     color: #222;
 }
 
+/* Skills Section */
 .skills-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
@@ -106,43 +119,78 @@ strong {
     transform: translateY(-2px);
 }
 
-/* Better spacing for course lists */
-.courses {
-    color: #666;
+/* Project Links */
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-links {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.project-link {
+    color: #007bff;
+    text-decoration: none;
     font-size: 0.9rem;
-    margin-top: 1rem;
-    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
 }
-footer {
-    background-color: #000000;
-    color: #fff;
-    padding: 10px;
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+.project-link i {
+    font-size: 0.8em;
+}
+
+/* Footer Section */
+.footer {
     text-align: center;
-    margin-top: 198px;
-    position: relative;
-
+    padding: 2rem 0;
+    color: #666;
+    border-top: 1px solid #eee;
+    margin-top: 2rem;
 }
 
-footer .fa-heart {
-    color: red;
+.footer .fa-heart {
+    color: #ff4757;
 }
 
-
+/* Responsive Design */
 @media (max-width: 600px) {
     .container {
         padding: 0 10px;
     }
-    
+
     .name {
         font-size: 2rem;
     }
-    
+
     .contact-info {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .company-date, .project-date {
         flex-direction: column;
+    }
+
+    .project-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .project-links {
+        width: 100%;
+        justify-content: space-between;
     }
 }
