@@ -113,6 +113,20 @@ strong {
     margin-top: 1rem;
     line-height: 1.5;
 }
+footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: 198px;
+    position: relative;
+
+}
+
+footer .fa-heart {
+    color: red;
+}
+
 
 @media (max-width: 600px) {
     .container {
